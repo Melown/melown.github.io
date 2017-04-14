@@ -34,4 +34,3 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
->>>>>>> Initial web page structure
