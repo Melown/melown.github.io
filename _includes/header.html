@@ -1,0 +1,25 @@
+<header class="site-header navbar navbar-default" role="banner">
+
+  <div class="wrapper">
+
+        <a class="site-title" href="{{ "/" | relative_url}}">
+                <img src="/images/melown-os-logo.png">
+                <span>{{ site.title | escape }}</span>
+        </a>
+
+    <h1 style="margin-bottom: 0px; padding: 0px; float:left;">This DRAFT</h1>
+    <nav class="site-nav">
+
+      <div class="trigger">
+        <a class="page-link" href="/">Home</a>
+        {% for my_page in site.pages %}
+          {% if my_page.title and my_page.layout != 'component' %}
+          <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </nav>
+
+  </div>
+
+</header>
